@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiDemi.Catalog.Presentation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiDemo.Catalog.Domain", "Services\Catalog\Core\AiDemo.Catalog.Domain\AiDemo.Catalog.Domain.csproj", "{FE350CA4-C1F6-41BF-9997-A92C33DDC169}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{6EE6048D-BA5F-49EB-9643-BC58ADAC1C54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiDemo.Catalog.Persistence", "Services\Catalog\Infrastructure\Persistence\AiDemo.Catalog.Persistence\AiDemo.Catalog.Persistence.csproj", "{001AC64B-B400-407E-9B78-B89491F7692D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{FE350CA4-C1F6-41BF-9997-A92C33DDC169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE350CA4-C1F6-41BF-9997-A92C33DDC169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE350CA4-C1F6-41BF-9997-A92C33DDC169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001AC64B-B400-407E-9B78-B89491F7692D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001AC64B-B400-407E-9B78-B89491F7692D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001AC64B-B400-407E-9B78-B89491F7692D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001AC64B-B400-407E-9B78-B89491F7692D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +75,8 @@ Global
 		{F9F443DC-4ACC-4FFB-92EA-2B865D369EDC} = {F0CC756E-1B01-4450-83F9-72C56349133B}
 		{9062112B-AD0C-412F-98E5-CD42AA98FF01} = {F9F443DC-4ACC-4FFB-92EA-2B865D369EDC}
 		{FE350CA4-C1F6-41BF-9997-A92C33DDC169} = {96A798AF-389C-46DD-9A86-8A2513F3E8A5}
+		{6EE6048D-BA5F-49EB-9643-BC58ADAC1C54} = {6C357947-EA8D-4BAB-9290-BF6DC9CB4524}
+		{001AC64B-B400-407E-9B78-B89491F7692D} = {6EE6048D-BA5F-49EB-9643-BC58ADAC1C54}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89353E61-A778-4957-BE9C-8567A8AE2818}
