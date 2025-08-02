@@ -17,6 +17,7 @@ namespace AiDemo.SharedLiblary.Extensions
             services.AddHttpContextAccessor();
             services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
             services.AddValidatorsFromAssemblyContaining<TMarker>();
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<TMarker>());
             return services;
         }
     }

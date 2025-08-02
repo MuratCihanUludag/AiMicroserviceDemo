@@ -12,13 +12,13 @@ namespace AiDemo.Catalog.Persistence.Repositories
     public class ReadGenaricRepository<TEntity, TIdentifier> : IReadGenaricRepository<TEntity, TIdentifier> where TEntity : Entity<TIdentifier>
         where TIdentifier : IEquatable<TIdentifier>
     {
-        private readonly CatalogDbContext _context;
+        private readonly CategoryDbContext _context;
         private readonly DbSet<TEntity> _dbSet;
 
-        public ReadGenaricRepository(CatalogDbContext context)
+        public ReadGenaricRepository(CategoryDbContext context)
         {
             _context = context;
-            _dbSet = _dbSet = _context.Set<TEntity>();
+            _dbSet =  _context.Set<TEntity>();
         }
         protected IQueryable<TEntity> GetQueryable()
         {

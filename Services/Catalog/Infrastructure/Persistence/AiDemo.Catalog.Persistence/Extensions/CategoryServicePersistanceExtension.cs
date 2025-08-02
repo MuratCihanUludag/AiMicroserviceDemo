@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace AiDemo.Catalog.Persistence.Extensions
 {
-    public static class CatalaogServicePersistanceExtension
+    public static class CategoryServicePersistanceExtension
     {
-        public static IServiceCollection AddCatalogPersistence(this IServiceCollection services)
+        public static IServiceCollection AddCategoryPersistence(this IServiceCollection services)
         {
             services.AddSingleton<IMongoClient, MongoClient>(sp =>
             {
@@ -24,7 +24,7 @@ namespace AiDemo.Catalog.Persistence.Extensions
             {
                 var client = sp.GetRequiredService<IMongoClient>();
                 var options = sp.GetRequiredService<MongoOption>();
-                return CatalogDbContext.Create(client.GetDatabase(options.DatabaseName));
+                return CategoryDbContext.Create(client.GetDatabase(options.DatabaseName));
             });
 
             return services;

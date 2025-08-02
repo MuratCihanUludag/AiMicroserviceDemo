@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace AiDemo.Catalog.Persistence.Context
 {
-    public class CatalogDbContext : DbContext
+    public class CategoryDbContext : DbContext
     {
-        public CatalogDbContext(DbContextOptions<CatalogDbContext> options) : base(options) { }
-        public static CatalogDbContext Create(IMongoDatabase database)
+        public CategoryDbContext(DbContextOptions<CategoryDbContext> options) : base(options) { }
+        public static CategoryDbContext Create(IMongoDatabase database)
         {
-            var optionsBuilder = new DbContextOptionsBuilder<CatalogDbContext>()
+            var optionsBuilder = new DbContextOptionsBuilder<CategoryDbContext>()
                 .UseMongoDB(database.Client, database.DatabaseNamespace.DatabaseName);
-            return new CatalogDbContext(optionsBuilder.Options);
+            return new CategoryDbContext(optionsBuilder.Options);
         }
         public DbSet<Product> Products { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
